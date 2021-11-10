@@ -10,6 +10,13 @@ padding: 10px 20px;
 color: #fff;
 cursor: pointer; 
 margin-top: 10px;
+transition-duration: 0.4s;
+
+:hover {
+  background-color: #fff;
+  color: black;
+}
+
 `;
 
 export default Button;

@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import schema from "./Validation";
 import img2 from "./anime.png";
 import Div from "./style";
+import Icon from "../icon/email.svg"
 
 const FormNew = () => {
 
@@ -28,11 +29,13 @@ const FormNew = () => {
                 <span>{errors.email?.message}</span>
                 <Field.Text placeholder="Senha" label="" name="password" type="password" {...register('password')} />
                 <span>{errors.password?.message}</span>
-                <Button type="submit">Login</Button>
+                <Button type="submit" className='button button1'>Login</Button>
                 
+                <div style={{paddingTop: '45px', textAlign: 'center'}}>
                 <a href="https://www.google.com.br/" className="link">Esqueceu a senha?</a> 
-                <br/><br/>
+                <hr/>
                 <a  href="https://www.google.com.br/" className="link">Cadastre-se</a>
+                </div>
             </Form>
         </Div>
 
