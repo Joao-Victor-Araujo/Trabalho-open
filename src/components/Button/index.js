@@ -10,11 +10,10 @@ padding: 10px 20px;
 color: #fff;
 cursor: pointer; 
 margin-top: 10px;
-transition-duration: 0.4s;
+transition-duration: 0.3s;
 
 :hover {
-  background-color: #fff;
-  color: black;
+  background-color: #4b8b3b;
 }
 
 `;

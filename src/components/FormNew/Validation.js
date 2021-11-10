@@ -1,13 +1,10 @@
 import * as yup from "yup";
 
-const schema = yup.object({
+const schema = yup.object().shape({
     email: yup.string()
-    .email("Digite um Email Válido")
-    .required("Preencha o Campo Email"),
-    password: yup.string()
-    .min(6, "Mínimo de 2 caracteres")
-    .required("Preencha o Campo Senha"),
-}).required();
+    .required("O Campo Email é obrigatório!").email("Digite um Email Válido"),
+    password: yup.string().required("O Campo senha é obrigatório!").min(6, "Mínimo de 6 caracteres")
+});
 
 
 export default schema;
