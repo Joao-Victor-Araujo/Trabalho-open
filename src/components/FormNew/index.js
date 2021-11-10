@@ -7,7 +7,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import schema from "./Validation";
 import img2 from "./anime.png";
 import Div from "./style";
-import Icon from "../icon/email.svg"
 
 const FormNew = () => {
 
@@ -18,7 +17,10 @@ const FormNew = () => {
     const onSubmit = (user) => {
         console.log(user)
         alert("Login Feito com Sucesso!")
+    }
 
+    const esqueceuSenha = ()=>{
+        alert("Entre em contato com o Email do Site")
     }
    
     return (
@@ -32,9 +34,9 @@ const FormNew = () => {
                 <Button type="submit" className='button button1'>Login</Button>
                 
                 <div style={{paddingTop: '45px', textAlign: 'center'}}>
-                <a href="https://www.google.com.br/" className="link">Esqueceu a senha?</a> 
+                <a href="x" onClick={esqueceuSenha} className="link">Esqueceu a senha?</a> 
                 <hr/>
-                <a  href="https://www.google.com.br/" className="link">Cadastre-se</a>
+                <a  href="xx" className="link">Cadastre-se</a>
                 </div>
             </Form>
         </Div>
