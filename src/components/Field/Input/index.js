@@ -5,7 +5,7 @@ font-size: 18px;
 padding: 10px;
 border-radius: 300px;
 background-color: #D8D8D8;
-width: 120%;
+width: 160%;
 border: none;
 
 `;

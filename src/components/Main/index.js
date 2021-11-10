@@ -10,7 +10,7 @@ const Main = styled.main`
     border-radius: 15px;
     margin: 5rem auto;
     @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;                     
 `;
 
 export default Main;
