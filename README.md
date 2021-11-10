@@ -25,6 +25,4 @@ Projeto feito em React.
 Jesper (Ian) Brayner <br>
 [@Joao-Victor-Araujo](https://github.com/Joao-Victor-Araujo) <br>
 [@jorgelucas006](https://github.com/JorgeLucas006) <br>
-Lorenna Laieny <br>
-[@LuanaSVieira](https://github.com/LuanaSVieira) 
  
