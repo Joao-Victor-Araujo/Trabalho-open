@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import Button from "../Button";
 import { yupResolver } from "@hookform/resolvers/yup";
 import schema from "./Validation";
-import img2 from "./anime2.jpg";
+import img2 from "./img/anime2.jpg";
 import Div from "./style";
 
 const FormNew = () => {
@@ -17,12 +17,9 @@ const FormNew = () => {
     const onSubmit = data => {
     console.log(data)
     alert("Cadastro feito com Sucesso!");
+    document.location.reload(true);
 }
-        
-    // const esqueceuSenha = ()=>{
-    //     alert("Entre em contato com o Email do Site");
-    // }
-   
+
     return (
         <Div>
             <img src={img2} alt="" />
@@ -37,12 +34,6 @@ const FormNew = () => {
                 <span>{errors.confirmPassword?.message}</span>
                 
                 <Button type="submit" className='button1'>Cadastrar</Button>
-                
-                {/* <div style={{paddingTop: '45px', textAlign: 'center'}}>
-                <a href="x" onClick={esqueceuSenha} className="link">Esqueceu a senha?</a> 
-                <hr/>
-                <a  href="xx" className="link">Cadastre-se</a>
-                </div> */}
             </Form>
         </Div>
 
